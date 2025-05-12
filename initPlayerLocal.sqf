@@ -18,9 +18,9 @@ private _medic = [
         private _currentRank = player getVariable ["ace_medical_medicClass", 0];
         private _newRank = if (_currentRank >= 2) then { 0 } else { _currentRank + 1 };
         private _newRankText = switch (_newRank) do {
-          case 0: {"Not Medic"};
-          case 1: {"Combat Medic"};
-          case 2: {"Doctor"};
+          case 0: {"Not an Medic"};
+          case 1: {"an Combat Medic"};
+          case 2: {"an Doctor"};
         };
         player setVariable ["ace_medical_medicClass", _newRank, true];
         private _msg = format ["%1 is %2", name player, _newRankText];
@@ -38,8 +38,8 @@ private _engineer = [
         private _currentRank = player getVariable ["ace_repair_engineer", 0];
         private _newRank = if (_currentRank == 1) then { 0 } else { 1 };
         private _newRankText = switch (_newRank) do {
-          case 0: {"Not Engineer"};
-          case 1: {"Engineer"};
+          case 0: {"Not an Engineer"};
+          case 1: {"an Engineer"};
         };
         player setVariable ["ace_repair_engineer", _newRank, true];
         private _msg = format ["%1 is %2", name player, _newRankText];
