@@ -14,17 +14,17 @@ A script that allows users to dynamically change the role of units in the ACE3 m
 1. Clone this repository to `Mission Folder/scripts`
 2. Copy `description.ext` directly under the mission folder
 3. Place a flag in the mission
-- `Activation`: `Any Player`
-- `Repeatable`: `True`
+  - `Activation`: `Any Player`
+  - `Repeatable`: `True`
 4. Write the following in the `On Activation` of the flag
-- `Medic`
-```sqf
-[thisList] execVM "scripts\arma3-ace3-role-changer\Flag-medic.sqf";
-```
-- `Engineer`
-```sqf
-[thisList] execVM "scripts\arma3-ace3-role-changer\Flag-engineer.sqf";
-```
+  - `Medic`
+  ```sqf
+  [thisList] execVM "scripts\arma3-ace3-role-changer\Flag-medic.sqf";
+  ```
+  - `Engineer`
+  ```sqf
+  [thisList] execVM "scripts\arma3-ace3-role-changer\Flag-engineer.sqf";
+  ```
 4. Enjoy
 
 ### Self Actions menu Ver
