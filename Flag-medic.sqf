@@ -1,4 +1,5 @@
-_triggerUnit = thisList select 0;
+params ["_thisList"];
+_triggerUnit = _thisList select 0;
 
 if (isPlayer _triggerUnit) then {
   private _currentRank = _triggerUnit getVariable ["ace_medical_medicClass", 0];
